@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+    <meta name="viewport"
+    content= "width = device-width, intial-scale=1.0" >
+    <title>Quiz Website</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' 
+    rel='stylesheet'>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="scotch-container">
+        <nav>
+          <a href="#">HOME</a>
+          <a href="#">FAQs</a>
+          <a href="#" class="buy">TRY QUIZ</a>
+        </nav>
+        <div class="main-container">
+          <div class="text-sphere-container">
+            <div class="text-container">
+              <h1>PhysiQ</h1>
+              <h3>  Master the forces</h3>
+              <p>Ready to dive and test your knowledge ?</p>
+              <div class="start_btn"><button><a class="start_btn">TRY QUIZ</a></button></div>
+              
+            </div>
+            <a href="">
+              <div class="sphere"></div>
+            </a>
+          </div>
+        </div>
+      </div>    
+
+    <div class="info_box">
+        <div class="info-title"><span>Some Rules of this Quiz</span></div>
+        <div class="info-list">
+           <div class="info">1. There are 10 questions</div>
+            <div class="info">2. You will have only <span>15 seconds</span> per each question.</div>
+            <div class="info">3. Once you select your answer, it can't be undone.</div>
+            <div class="info">4. You can't select any option once time goes off.</div>
+            <div class="info">5. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">6. You'll get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Question ➜</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class='bx bxs-coin bx-tada' style='color:#eade48' ></i>
+        </div>
+        <div class="complete_text"><p>Yay ! You've completed the Quiz! </p></div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
